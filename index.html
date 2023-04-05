@@ -500,10 +500,7 @@ NODE insert_front(NODE last, char str[10]) {
   strcpy(temp -> info, str);
   temp -> link = temp;
 
-  if (last == NULL)
-    Implement a menu driven Program
-  for the following operations on Circular Linked
-  List. {
+  if (last == NULL) {
     return temp;
   }
   else
@@ -830,8 +827,6 @@ void tower(int n, char src, char aux, char dest) {
   if (n == 1) {
     printf("Move disk %d from peg %c to peg %c", n, src, dest);
     return;
-    Implement the following using recursion:
-      (i) Tower_of_Hanoi(ii) GCD of two numbers(iii) Largest of ‘n’ numbers
   }
   tower((n - 1), src, dest, aux);
   printf("\nMove disk %d from peg %c to peg %c\n", n, src, dest);
@@ -1142,9 +1137,6 @@ NODE insert(NODE root, int item) {
   prev = NULL;
   cur = root;
   while (cur != NULL) {
-    Implement a menu driven Program
-    for the following operations on Binary Search Tree
-      (BST) of Integers(i) Create a BST of N Integers(ii) Traverse the BST in Inorder, Preorder and Postorder
     prev = cur;
     if (item == cur -> info) {
       printf("duplicate items are not allowed\n");
